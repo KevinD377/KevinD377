@@ -1,0 +1,582 @@
+/*
+* {
+    border: 1px dashed red;
+    min-height: 10px;
+}
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--color-fuente);
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente-subtitulo);
+    font-size: 15px;
+}
+body, div, ul, nav, header, footer, a, li, label, img, p, h1, h2, h3, h4, i {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+
+    /*colorimetria*/
+    --color-fondo: #F5F5F5;
+    --color-fuente: #e7dfd9;
+    --color-principal: #cb684d;
+    --color-secundario: #61603c;
+
+    /*fuentes de texto*/
+
+    --fuente-titulo: "Libre Baskerville";
+    --fuente-subtitulo: "Montserrat";
+    --fuente-tamaño-titulo: 1.5rem;
+    --fuente-tamaño-menu: 1.1rem;
+    --fuente-tamaño: 1rem;
+    --fuente-ancho: 600;
+
+    /**/
+}
+.menu {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--color-fuente);
+    padding: 30px;
+}
+
+/*logo CInthia Monsalve*/
+
+.menu__logo {
+    color: var(--color-fuente);
+    font-size: var(--fuente-tamaño-titulo);
+    text-align: center;
+    cursor: pointer;
+    font-weight: var(--fuente-ancho);
+    font-family: var(--fuente-titulo);
+}
+
+/*lista*/
+
+.menu__item {
+    display: inline-block;
+    font-size: var(--fuente-tamaño-menu);
+    font-weight: var(--fuente-ancho);
+    cursor: pointer;
+    margin-left: 10px;
+}
+.item--lista {
+    color: var(--color-fuente);
+    padding-right: 15px;
+    transition: scale, 0.25s;
+}
+.item--lista:hover {
+    transform: scale(1.1);
+}
+.item--lista a{
+    color: var(--color-fuente);
+}
+.item--home {
+    color: var(--color-principal);
+    padding-right: 15px;
+    transition: scale, 0.25s;
+}
+.item--home:hover {
+    transform: scale(1.1);
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    height: auto;
+    background: linear-gradient(95deg,#000000b9,#000000a7,#0000006f), url(/galery/Montevideo-portada.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.slogan {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    height: 650px;
+    min-height: 500px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*Logo programable (CSS)*/
+
+.logo {
+    width: 300px;
+    font-family: var(--fuente-titulo);
+    color: var(--color-fuente);
+    position: relative;
+    line-height: 0.8;
+}
+.logo__item{
+    font-size: 150px; /*no modificar*/
+    line-height: 0.8;
+}
+.item--guia {
+    position: absolute;
+    top: 180px;
+    left: 70px;
+    font-family: var(--fuente-subtitulo);
+    font-size: var(--fuente-tamaño);
+    letter-spacing: 3px;
+    margin-left: 50px;
+    font-weight: 800;
+    letter-spacing: 8px;
+    line-height: 25px;
+}
+.item--c{
+    width: 100px;
+    position: relative;
+    font-size: 150px; /*no modificar*/
+    line-height: 0.8;
+}
+.item--m{
+    width: 100px;
+    position: relative;
+    left: 95px;
+    top: 55px;
+}
+
+/*texto slogan tipeado (JS)*/
+
+.text {
+    width: 500px;
+    height: 91px;
+    min-height: 91px;
+    font-family: var(--fuente-subtitulo);
+    color: var(--color-fuente);
+    font-size: var(--fuente-tamaño-titulo);
+    padding: 20px;
+    text-align: center;
+    line-height: 1;
+    font-weight: var(--fuente-ancho);
+}
+.text__color {
+    color: var(--color-principal);
+}
+
+/*main*/
+
+.presentacion {
+    width: 100%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 100px 0px;
+}
+.presentacion__img {
+    width: 300px;
+    height: auto;
+}
+.presentacion__img img {
+    width: 300px;
+    height: 300px;
+    object-fit: contain;
+    object-position: center;
+}
+.presentacion__slogan {
+    max-width: 500px;
+    height: auto;
+    display: flex;
+    align-items: center;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 20px;
+}
+.titulo2--item {
+    color: var(--color-principal);
+    text-align: center;
+    font-size: var(--fuente-tamaño-titulo);
+    font-family: var(--fuente-titulo);
+}
+.titulo2--item2 {
+    color: var(--color-secundario);
+    font-size: var(--fuente-tamaño);
+    font-family: var(--fuente-subtitulo);
+    font-weight: var(--fuente-ancho);
+}
+
+/*contenido*/
+
+.contenido {
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    margin-top: 60px;
+}
+.galeria {
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+.galeria__img  {
+    width: 0px;
+    min-width: 50px;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    text-align: right;
+    flex-grow: 1;
+    padding: 10px;
+    font-family: var(--fuente-titulo);
+}
+.galeria__img h3 {
+    color: var(--color-fuente);
+    font-size: var(--fuente-tamaño-titulo);
+}
+.galeria__img p {
+    color: var(--color-fuente);
+    font-size: 5rem; /*no midificar*/
+}
+.img--caja1 {
+    flex: 1;
+    background: linear-gradient(95deg,#0000007b,#0000007b,#0000007b), url(/galery/punta-del-este.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    filter: brightness(1);
+    transition: flex 1.5s ease, filter 1.5s ease;
+}
+.img--caja2 {
+    flex: 1;
+    background: linear-gradient(95deg,#0000007b,#0000007b,#0000007b), url(/galery/montevideo.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    transition: flex 1.5s ease, filter 1.5s ease;
+}
+.img--caja3 {
+    flex: 1;
+    background: linear-gradient(95deg,#0000007b,#0000007b,#0000007b), url(/galery/colorado.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    transition: flex 1.5s ease, filter 1.5s ease;
+}
+.img--caja4 {
+    flex: 1;
+    background: linear-gradient(95deg,#0000007b,#0000007b,#0000007b), url(/galery/colonia.jpg);
+    background-repeat: repeat;
+    background-size: cover;
+    background-position: center;
+    transition: flex 1.5s ease, filter 1.5s ease;
+}
+
+/*hover galeria*/
+
+.galeria__img:hover {
+    flex: 4;
+    filter: brightness(1.6);
+    transition: flex 1.5s ease, filter 1.5s ease;
+}
+
+/*wellness*/
+
+.wellness {
+
+    width: 100%;
+    height: auto;
+    background: linear-gradient(95deg,#000000b9,#000000a7,#0000006f), url(/galery/wellness.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 100px;
+    background-attachment: fixed;
+}
+.wellness__caja {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    padding: 20px;
+}
+.wellness__caja h3 {
+    color: var(--color-fuente);
+    font-size: var(--fuente-tamaño-titulo);
+    font-family: var(--fuente-titulo);
+    margin-right: 10px;
+}
+.wellness__caja p {
+    width: auto;
+    max-width: 600px;
+    height: auto;
+    color: var(--color-fuente);
+    font-size: var(--fuente-tamaño);
+    font-family: var(--fuente-subtitulo);
+}
+.wellness__caja button {
+    padding: 10px 40px;
+    font-family: var(--fuente-subtitulo);
+    font-weight: 600;
+    font-size: var(--fuente-tamaño);
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid var(--color-principal);
+    color: var(--color-fuente);
+    transition: transform 0.5s ease, background-color 0.5s ease;
+    cursor: pointer;
+}
+.wellness__caja button:hover {
+    transform: scale(1.1);
+    background-color: var(--color-principal);
+}
+
+/*aside*/
+
+.aside {
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+}
+.aside__h3 {
+    max-width: 500px;
+    color: var(--color-principal);
+    font-size: var(--fuente-tamaño-titulo);
+    font-family: var(--fuente-titulo);
+    padding: 20px;
+}
+.aside__h3 p{
+    min-width: 200px;
+    max-width: 500px;
+    color: var(--color-secundario);
+    font-size: var(--fuente-tamaño);
+    font-weight: var(--fuente-ancho);
+    font-family: var(--fuente-subtitulo);
+}
+.aside__img {
+    width: 300px;
+    height: auto;
+}
+.aside__img img {
+    width: 300px;
+    height: 300px;
+    border-radius: 15px;
+    object-fit: contain;
+    object-position: center;
+    margin-top: 20px;
+}
+.aside__contenedor {
+    max-width: 900px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 100px;
+}
+.aside__contenedor h4 {
+    color: var(--color-secundario);
+    font-size: var(--fuente-tamaño);
+    margin-top: 15px;
+}
+.aside__cajas {
+    width: 220px;
+    height: auto;
+    text-align: center;
+    border: 1px solid var(--color-principal);
+    border-radius: 10px;
+    padding: 10px;
+    transition: transform 0.5s;
+}
+.aside__cajas img {
+    width: 150px;
+    height: 150px;
+    object-fit: contain;
+    object-position: center;
+}
+.aside__cajas:hover {
+    transform: scale(1.03);
+}
+
+/*footer*/
+
+.footer {
+    width: 100%;
+    background-color: var(--color-fuente);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+}
+.footer__cajas {
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+.footer__redes {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    list-style: none;
+}
+.footer__redes i {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-fuente);
+}
+.footer__cajas li {
+    margin: 10px;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+}
+.footer__cajas h4 {
+    color: var(--color-principal);
+    font-size: var(--fuente-tamaño-titulo);
+    font-weight: var(--fuente-ancho);
+    font-family: var(--fuente-titulo);
+    margin-bottom: 10px;
+}
+.footer__cajas h2 {
+    color: var(--color-principal);
+    font-weight: var(--fuente-ancho);
+    font-family: var(--fuente-titulo);
+}
+.legales__caja {
+    width: 120px;
+    border-radius: 5px;
+    color: var(--color-secundario);
+    padding: 14px;
+}
+.caja--TicTok {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #000;
+    color: var(--color-fuente) !important;
+}
+.caja--Instagram {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #C13584;
+    color: var(--color-fuente) !important;
+}
+.caja--Linkedln {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #0e76a8;
+    color: var(--color-fuente) !important;
+}
+
+/*responsiv*/
+
+@media (max-width:900px) {
+    .contenido {
+        width: 100%;
+        height: 600px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: start;
+    }
+    .presentacion__img {
+        width: 150px;
+        height: auto;
+    }
+    .presentacion__img img {
+        width: 150px;
+        height: auto;
+        object-fit: cover;
+        object-position: center;
+    }
+    .galeria {
+        width: 100%;
+        height: 200px;
+        flex-direction: column;
+    }
+    .img--caja1, .img--caja2, .img--caja3, .img--caja4 {
+        width: 100%;
+        height: 200px;
+    }
+    .galeria__img:hover {
+        width: 100%;
+        height: 200px;
+    }
+    
+    .galeria__img:not(:hover) {
+        background-color: black;
+    }
+    .aside {
+        width: 100%;
+        margin-top: 60px;
+    }
+    .presentacion {
+        margin: 60px 0px;
+    }
+    .aside__img {
+        width: 150px;
+        height: auto;
+    }
+    .aside__img img {
+        width: 150px;
+        height: auto;
+        border-radius: 15px;
+        object-fit: cover;
+        object-position: center;
+        margin-top: 20px;
+    }
+    .aside__cajas  {
+        width: 150px;
+        height: auto;
+        text-align: center;
+        border: 1px solid var(--color-principal);
+        border-radius: 10px;
+        padding: 10px;
+        transition: transform 0.5s;
+    }
+    .aside__cajas img {
+        width: 100px;
+        height: 100px;
+        object-fit: contain;
+        object-position: center;
+    }
+    .aside__contenedor {
+        max-width: 520px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        gap: 10px;
+    }
+    .aside__cajas:hover {
+        transform: none;
+    }
+}

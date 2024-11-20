@@ -1,0 +1,430 @@
+* {
+    box-sizing: border-box;
+    /*border: 1px dashed red;*/
+}
+body {
+    background-color: var(--color-fuente);
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+body, div, ul, nav, header, footer, a, li, label, img, p, h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+
+    /*colorimetria*/
+    --color-fondo: #F5F5F5;
+    --color-fuente: #e7dfd9;
+    --color-principal: #cb684d;
+    --color-secundario: #61603c;
+
+    /*fuentes de texto*/
+
+    --fuente-titulo: "Libre Baskerville";
+    --fuente-subtitulo: "Montserrat";
+    --fuente-tamaño-titulo: 1.5rem;
+    --fuente-tamaño-menu: 1.1rem;
+    --fuente-tamaño: 1rem;
+    --fuente-ancho: 600;
+
+    /**/
+}
+
+.menu {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid #e7dfd9;
+    padding: 30px;
+}
+
+/*logo CInthia Monsalve*/
+
+.menu__logo {
+    color: #e7dfd9;
+    font-size: 1.5rem;
+    text-align: center;
+    cursor: pointer;
+    font-weight: 600;
+    font-family: "Libre Baskerville";
+}
+
+/*lista*/
+
+.menu__item {
+    display: inline-block;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-left: 10px;
+}
+.item--lista {
+    color: #e7dfd9;
+    padding-right: 15px;
+    transition: scale, 0.25s;
+}
+.item--lista a {
+    color: #e7dfd9;
+}
+.item--lista:hover {
+    transform: scale(1.1);
+}
+.item--abaut a{
+    color: #CB684D;
+}
+.item--abaut {
+    padding-right: 15px;
+    transition: scale, 0.25s;
+}
+.item--abaut:hover {
+    transform: scale(1.1);
+}
+
+/*header*/
+
+header {
+    width: 100%;
+    height: auto;
+    min-height: 740px;
+    background: linear-gradient(95deg,#000000b9,#000000a7,#0000006f), url(/galery/slogan2.jpg);
+    background-attachment: fixed;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+.presentacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 80vw;
+    min-height: 600px;
+    margin: auto;
+    gap: 20px;
+}
+.slogan {
+    width: 80vw;
+}
+.text__color {
+    color: #CB684D;
+}
+.slogan__titulo {
+    color: #e7dfd9;
+    font-size: clamp(1.5rem, 9vw, 3.5rem);
+    text-align: left;
+    font-family: "Libre Baskerville";
+    font-weight: 600;
+}
+.botones {
+    width: 80vw;
+}
+.botones__slogan {
+    padding: 10px 40px;
+    font-family: "Montserrat";
+    font-weight: 600;
+    font-size: 1rem;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 2px solid #CB684D;
+    color: #e7dfd9;
+    cursor: pointer;
+    margin: 50px 0px;
+    transition: transform 0.5s ease, background-color 0.5s ease;
+}
+.botones__slogan--contac {
+    background-color: #CB684D;
+}
+.botones__slogan--mas {
+    background-color: transparent;
+    border: 1px solid #CB684D;
+}
+.botones__slogan:hover {
+    transform: scale(1.1);
+}
+.botones__slogan--mas:hover {
+    background-color: #CB684D;
+}
+.wave {
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    z-index: 1;
+}
+.logo {
+    width: 100%;
+    height: 300px;
+}
+/*contenido*/
+
+.caja {
+    width: 100%;
+    height: auto;
+    background-color: #B9885E;
+}
+.caja2 {
+    width: 100%;
+    height: auto;
+    background-color: #e7dfd9;
+}
+.historia__titulo {
+    text-align: center;
+    padding: 80px;
+    color: var(--color-fuente);
+    font-family: var(--fuente-titulo);
+    font-weight: var(--fuente-ancho);
+    font-size: var(--fuente-tamaño-titulo);
+    
+}
+.historia__caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    margin: 20px;
+}
+.historia__caja2 {
+    background: rgb(185,136,94);
+    background: linear-gradient(180deg, rgba(185,136,94,1) 30%, rgba(231,223,217,1) 30%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: var(--color-fuente);
+    padding: 100px 0;
+    gap: 30px;
+}
+.historia__caja2 p{
+    width: 500px;
+    height: auto;
+    color: var(--color-secundario);
+    font-family: var(--fuente-subtitulo);
+    font-weight: var(--fuente-ancho);
+}
+.historia__caja2 img {
+    width: 500px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+.historia__imagen {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    width: 500px;
+    height: auto;
+    flex-wrap: wrap;
+}
+.historia__imagen img {
+    width: 230px;
+    height: 350px;
+    object-fit: cover;
+    border-radius: 10px;
+    object-position: center;
+}
+
+.historia__imagen img:nth-child(2){
+    object-fit: contain;
+}
+.historia__imagen--mision img:nth-child(2){
+    object-fit: cover;
+}
+.historia__contenido {
+    width: 500px;
+    height: auto;
+    color: var(--color-fuente);
+    font-family: var(--fuente-subtitulo);
+    font-weight: var(--fuente-ancho);
+
+}
+.aventura {
+    width: 100%;
+    min-height: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(95deg,#000000b9,#00000099,#00000067), url(/galery/amanecer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: var(--color-fuente);
+}
+.aventura__caja {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+.aventura__caja h2 {
+    font-family: var(--fuente-titulo);
+    font-size: var(--fuente-tamaño-titulo);
+    font-weight: var(--fuente-ancho);
+    padding: 20px;
+}
+.aventura__parrafo {
+    width: 100%;
+}
+.aventura__parrafo p {
+    max-width: 700px;
+    font-family: var(--fuente-subtitulo);
+    font-size: var(--fuente-tamaño);
+    font-weight: var(--fuente-ancho);
+    padding: 20px;
+}
+.aventura__parrafo p:nth-child(3) {
+    text-align: right;
+}
+
+/*modificadores*/
+.caja2 h2 {
+    color: var(--color-secundario);
+    font-family: var(--fuente-titulo);
+    font-weight: var(--fuente-ancho);
+    font-size: var(--fuente-tamaño-titulo);
+}
+.caja2 h3 {
+    color: var(--color-secundario);
+    font-family: var(--fuente-titulo);
+    font-size: var(--fuente-tamaño-titulo);
+    font-weight: var(--fuente-ancho);
+}
+.caja2 p {
+    color: var(--color-secundario);
+}
+.historia__caja2--mision {
+    background: linear-gradient(0deg, rgba(185,136,94,1) 70%, rgba(231,223,217,1) 70%);
+}
+.historia__caja2--mision h2 {
+    color: var(--color-fuente);
+    padding: 0 20px;
+}
+.mision__caja2 p {
+    color: var(--color-fuente);
+    padding: 0 20px;
+}
+/*footer*/
+
+.footer {
+    width: 100%;
+    background-color: var(--color-fuente);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+    margin-top: 100px;
+}
+.footer__cajas {
+    width: 300px;
+    height: auto;
+    text-align: center;
+}
+.footer__redes {
+    width: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    margin: auto;
+    list-style: none;
+}
+.footer__redes i {
+    font-size: 2rem;
+    text-align: center;
+    color: var(--color-fuente);
+}
+.footer__cajas li {
+    margin: 10px;
+    list-style: none;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--color-secundario);
+}
+.footer__cajas h4 {
+    color: var(--color-principal);
+    font-size: var(--fuente-tamaño-titulo);
+    font-weight: var(--fuente-ancho);
+    font-family: var(--fuente-titulo);
+    margin-bottom: 10px;
+}
+.footer__cajas h2 {
+    color: var(--color-principal);
+    font-weight: var(--fuente-ancho);
+    font-family: var(--fuente-titulo);
+}
+.legales__caja {
+    width: 120px;
+    border-radius: 5px;
+    color: var(--color-secundario);
+    padding: 14px;
+}
+.caja--TicTok {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #000;
+    color: var(--color-fuente) !important;
+}
+.caja--Instagram {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #C13584;
+    color: var(--color-fuente) !important;
+}
+.caja--Linkedln {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: #0e76a8;
+    color: var(--color-fuente) !important;
+}
+@media (max-width:1058px) {
+    .historia__caja2 {
+        flex-direction: column-reverse;
+    }
+}
+@media (max-width:560px) {
+    .historia__caja2 img {
+        width: 100%;
+        height: auto;
+        border-radius: 0;
+    }
+    .historia__caja2 p {
+        width: auto;
+        padding: 20px;
+    }
+    .historia__caja {
+        margin: 0;
+    }
+    .historia__caja p {
+        padding: 0px 20px;
+    }
+    .historia__imagen img:nth-child(1){
+        display: none;
+    }
+    .historia__imagen img {
+        width: 100%;
+        height: 200px;
+        border-radius: 0;
+        margin-bottom: 40px;
+    }
+    .caja2 h3 {
+        padding: 20px;
+    }
+    .historia__caja2--mision h2 {
+        padding-left: 20px;
+    }
+}

@@ -1,0 +1,213 @@
+/*
+* {
+    border: 1px dashed red;
+    min-height: 10px;
+}
+*/
+* {
+    box-sizing: border-box;
+}
+body {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(95deg,#000000b9,#000000a7,#0000006f), url(/galery/login.jpg);
+    background-attachment: fixed;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat";
+    font-size: 15px;
+}
+body, div, ul, nav, header, footer, a, li, label, img, p,  h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+}
+:root {
+
+    /*colomitetria*/
+
+    --color-fuente: #e7dfd9;
+    --color-principal: #cb684d;
+    --color-secundario: #61603c;
+
+    /*fuentes*/
+
+    --fuente-titulo: "Libre Baskerville";
+    --fuente-subtitulo: "Montserrat";
+    --fuente-tamaño-titulo: 1.5rem;
+    --fuente-tamaño-menu: 1.1rem;
+    --fuente-tamaño: 1rem;
+    --fuente-ancho: 600;
+
+    /**/
+}
+.menu {
+    width: 80vw;
+    height: auto;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid var(--color-fuente);
+    padding: 30px;
+}
+
+/*logo CInthia Monsalve*/
+
+.menu__logo {
+    color: var(--color-fuente);
+    font-size: var(--fuente-tamaño-titulo);
+    text-align: center;
+    cursor: pointer;
+    font-weight: var(--fuente-ancho);
+    font-family: var(--fuente-titulo);
+}
+
+/*lista*/
+
+.menu__item {
+    display: inline-block;
+    font-size: var(--fuente-tamaño-menu);
+    font-weight: var(--fuente-ancho);
+    cursor: pointer;
+    margin-left: 10px;
+}
+.item--lista {
+    color: var(--color-fuente);
+    padding-right: 15px;
+    transition: scale, 0.25s;
+}
+.item--lista:hover {
+    transform: scale(1.1);
+}
+.item--lista a{
+    color: var(--color-fuente);
+}
+.item--home {
+    color: var(--color-principal);
+    padding-right: 15px;
+    transition: scale, 0.25s;
+}
+.item--home:hover {
+    transform: scale(1.1);
+}
+
+/*header*/
+
+.formulario {
+    width: 100vw;
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.formulario__caja {
+    width: 400px;
+    height: auto;
+    border-radius: 10px;
+    border: 1px solid #e7dfd92f;
+    background-color: #F5F5F5;
+    display: fleX;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.formulario__caja form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formulario__caja h1 {
+    color: var(--color-principal);
+    font-family: var(--fuente-titulo);
+    font-size: 2rem;
+    font-weight: var(--fuente-ancho);
+    padding: 20px;
+}
+.nombre, .email {
+    position: relative; 
+    border: 1px solid #cb684d73;
+    border-radius: 5px;
+}
+.texarea {
+    position: relative;
+}
+.formulario__caja input {
+    width: 300px;
+    height: 40px;
+    padding: 0 5px;
+    font-size: var(--fuente-tamaño);
+    color: var(--color-secundario);
+    font-family: var(--fuente-subtitulo);
+    font-weight: var(--fuente-ancho);
+    border: none;
+    background: none;
+    outline: none;
+}
+.formulario__caja label {
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: var(--color-secundario);
+    font-family: var(--fuente-subtitulo);
+    font-weight: var(--fuente-ancho);
+    transition: 0.5s;
+}
+.texarea textarea {
+    width: 100%;
+    height: 100px;
+    background-color: #F5F5F5;
+    border: 1px solid #cb684d73;
+    border-radius: 5px;
+    color: var(--color-secundario);
+    font-size: var(--fuente-tamaño);
+    font-family: var(--fuente-subtitulo);
+    font-weight: var(--fuente-ancho);
+    margin-top: 20px;
+    resize: none;
+}
+.texarea label {
+    position: absolute;
+    top: 25%;
+    left: 5px;
+    transform: translateY(-50%);
+    color: #61603c54;
+}
+.texarea textarea:focus ~ label, 
+.texarea textarea:focus ~ label {
+    top: 10px;
+    color: #cb684d;
+    font-size: 0.7rem;
+    transition: 0.5s;
+}
+.formulario__caja input:focus ~ label, 
+.formulario__caja input:valid ~ label {
+    top: -10px;
+    color: #cb684d;i
+    font-size: 0.7rem;
+    transition: 0.5s;
+}
+.boton input{ 
+    background-color: var(--color-principal);
+    border-radius: 10px;
+    width: 100%;
+    height: 40px;
+    color: var(--color-fuente);
+    font-family: var(--fuente-subtitulo);
+    font-weight: var(--fuente-ancho);
+    margin-bottom: 20px;
+    cursor: pointer;
+    outline: none;
+    transition: transform 0.5s;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.boton input:hover {
+    transform: scale(1.05);
+}
+
